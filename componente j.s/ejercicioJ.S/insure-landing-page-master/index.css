@@ -6,14 +6,13 @@ body {
 }
 .insure {
     margin: 18px 0px 0px 120px;
-    width: 75px;
-    height: 10px;
+    width:45%;
+    height: 25%;
     color: hsl(256, 26%, 20%);
 }
 .nav_container {
     display: flex;
     justify-content: space-between;
-    margin: 0px 100px 0px 0px;
 }
 /* gap: 2em;*/
 .menu{
@@ -48,28 +47,46 @@ a{
 }
 /*.menu :nth-child(4) :hover*/
 .container {
+    position: relative;
     background-color:hsl(256, 26%, 20%);
-    padding: 1px 0px 0px 10px;
-    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    width: 100%;
+    height: 450px;    
+}
+.imagen1 {
+    position: absolute;
     background-repeat: no-repeat;
-    background-size: 27%;
-    background-position: 1000px -50px;  
-
-    }
+    top: 1%;
+    right:0;
+    height: 90%;
+    z-index:10;  
+}
+ .imagen2 {
+    position:absolute;
+    background-image: url('./images/image-intro-desktop.jpg');
+    background-repeat: no-repeat;
+    top: 30%;
+    right: 4%;
+    height: 110%;
+    width: 40%;
+    z-index: auto;
+}
 .linea {
     height:1px;
-    width: 12%;
+    width: 10%;
     background-color: hsl(0, 0%, 98%);
-    margin: 120px 0px 0px 150px;
+    margin: 0vh 11%;
+    position: absolute;
+    top: 10%;
 }
 .titulo {
     font-family: 'DM Serif Display', serif;
     color:  hsl(0, 0%, 98%);
     font-size: 300%;
-    height: 80px;
-    width: 500px;
+    height: 8%;
+    width: 5%;
     display:inline-table; 
-    margin: 5vh 11%;
+    margin: 10vh 11%;
+    
 }
 .parrafo {
     color: hsl(0, 0%, 98%);
@@ -89,45 +106,40 @@ hijo{ font-size: 3rem;} */
     justify-content: center; 
     height: 0%; 
     width: 90px;
-    margin: -1% 0% 0% 11%;
+    margin: 1% 0% 0% 11%;
 }
 .plans:hover {
     color: hsl(256, 26%, 20%);
     background-color: white;
 }
-.imagen {
+.imagen3 {
     position: absolute;
-    top: 48%; 
+    top: 70%; 
     background-repeat: no-repeat; 
-    height: 55%;
-    width: 145px;
+    height: 75%;
+    width: 16%;
+    z-index: 10;
  }
-.imagen2 {
-    float: right;
-    margin: 9% 8% 0% 0%;
-    background-repeat: no-repeat;
-    height: 65%;
-    width: 360px;
-}
+
 .linea2 {
     height:1px;
     width: 10%;
     background-color: hsl(256, 26%, 20%);
-    margin: 15% 0% 0% 12%;   
+    margin: 20% 0% 0% 12%;   
 } 
 .titulo2 {
     font-family: 'DM Serif Display', serif;
     color:  hsl(256, 26%, 20%);
     font-size: 300%;
-    height: 80px;
-    width: 500px;
+    height: 8%;
+    width: 5%;
     display:inline-table; 
-    padding: 18px 0px 0px 140px;
+    padding: 1% 0% 0% 12%;
 }
 .iconos {
     display: flex; 
     justify-content: space-between;
-    padding: 1px 90px 0px 130px;
+    padding: 1% 9% 0% 12%;
 }
 .semititulo {
     font-family: 'DM Serif Display', serif;
@@ -140,7 +152,7 @@ hijo{ font-size: 3rem;} */
 .cuadro {
     background-color:hsl(256, 26%, 20%);
     padding: 30px;
-    margin: 150px 120px 120px 120px;
+    margin: 15% 12% 12% 12%;
     background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
     background-repeat: no-repeat;
     background-size: 35%;
@@ -164,39 +176,212 @@ hijo{ font-size: 3rem;} */
     color: hsl(256, 26%, 20%);
     background-color: white;
 }
-
 footer {
-    list-style: none;
-
+    color: white;
+    background: rgb(251, 244, 248);
 }
-.figuras {
-    background-repeat: no-repeat; 
-    margin:1vh -95%;
+.fondo {
+    z-index: -1;
 }
 .insure2 {
-    margin:1vh -1000%;
-    width: 13vh;
-    height: 13px;
+    height: 1rem;
     color: hsl(256, 26%, 20%);
+    z-index: -1;
+    margin: 0% 2% 0% -650%;
 }
 .logos2 {
     display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    color:  hsl(273, 4%, 51%); 
-    background-size: 20%;
-    margin: 100px 100px 400px 500px;
-    width: 15px;
-    height: 16px;
+    justify-content: space-around;
+    color:  hsl(280, 10%, 11%); 
+    background-size: 15%;
+    height: 1.5rem;
+    margin: -12% 1% 0% 50%;
 }
-ul{
+.logos3 {
+    background-color:hsl(0, 0%, 100%);
+    margin:0 6px
+}
+.logos3:hover,
+.logos3:focus{
+    cursor: pointer;
+    background-color: hsl(270, 35%, 12%);
+    color: white;
+}
+.figuras{
+    display: flex;
+    justify-content: space-between;    
+}
+.lista {
+    display: flex;
+    justify-content: space-around;
+    color: hsl(273, 4%, 51%);
+    text-transform:uppercase;
+    font-size: 8px;
+    letter-spacing: 0.20em;
+}  
+.fila {
     list-style: none;
 }
-.listado {
-    display: flex;
-    justify-content:space-around;
-    justify-content:space-around;
-    text-transform: uppercase;
-    font-size: small;
-    color:  hsl(273, 4%, 51%); 
+.listas {
+    
+    color:hsl(256, 26%, 20%);
+    font-size:small;
+    font-weight: 550;
+    word-spacing: 0.25em;
+    letter-spacing: 0.20em;
+    line-height: 25px;
+}
+.listas:hover {
+    text-decoration:underline hsl(256, 26%, 20%);
+}
+.linea3 {
+   
+    border-top: 1px solid rgb(196, 191, 191);
+    height: 50px;
+    max-width: 1100px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+@media screen and (max-width: 375px){
+    body {
+        width: 100%;
+        padding: 0%;
+    }
+    .insure {
+        float: right;
+        width: 100%;
+        height: 15%;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .imagen2 {
+        background-image: url(./images/image-intro-mobile.jpg);
+        top: -95%;
+        width: 86%;
+
+    }
+    .container {
+        margin: 106% 0% 0% 0%;
+        width: 138%;
+        height: -1%;
+        background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;   
+    }
+    .imagen1 {
+          display: none;
+          background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    }     
+   
+    .linea {
+        display: none;   
+    }
+    .titulo {
+        font-size:large%; 
+        padding: 1vh 20%;
+        
+    }
+    .parrafo {
+        display: flex;
+        justify-content: center;
+        height: 80px; 
+        width: 420px;
+        display:inline-table; 
+        padding: -1vh 18%;
+    }   
+    .plans { 
+        display: flex;
+        justify-content: center; 
+        margin: 1% 0% 0% 40%;
+    }
+    .linea2 {
+        height:1px;
+        width: 30%;   
+        margin: 30% 0% -23% 33%;
+    }
+
+    .imagen3 {
+        display: none;
+     }
+    .titulo2 {
+        display: flex;
+        justify-content: center;
+        padding:30% 10% 12% 50%;
+    }
+    .iconos {
+        display: flex; 
+        flex-direction: column;
+    }
+    .semititulo {
+        display: flex;
+        justify-content: center;
+    }
+    .snappy {
+        color:  hsl(273, 4%, 51%);
+        text-align: center;
+    }
+    .cuadro {
+        padding: 6%;
+        margin: 15% 12% 15% 12%;
+    }
+    .titulo3 {
+        text-align: center;
+        font-size: 250%;
+    }
+    .work {
+        padding: 5px;
+        margin: -5% 35% 0% 0%;
+    }
+    footer {
+        display: grid;
+        justify-content: center;
+        color: white;
+        background: rgb(255, 255, 255);
+    }
+    .fondo {
+        display: none;
+        background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    }
+    .insure2 {
+        margin: 0% 34% 15% 10%;
+    }
+    .logos2 {
+        display: grid;
+        justify-content:center;
+        justify-content: space-around; 
+        background-size: 20%;
+        height: 1.9rem;
+        margin: -35% 0% -1% 2%;
+        
+    }
+    .logos3 {
+        background-color:hsl(0, 0%, 100%);
+        
+    }
+    .lista {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        justify-content: center;
+        text-transform:uppercase;
+        font-size: 8px;
+        letter-spacing: 0.30em;
+        line-height: 30px;
+    }
+    .listas {
+        display: flex;
+        justify-content:center;
+        font-weight: 550;
+        word-spacing: 0.25em;
+        letter-spacing: 0.10em;
+        line-height: 30px;
+    }
+    .linea3 {
+        border-top: 1px solid rgb(196, 191, 191);
+        height: 50px;
+        max-width: 320px;
+        margin: 30% 0% -23% -5%;
+    }
 }

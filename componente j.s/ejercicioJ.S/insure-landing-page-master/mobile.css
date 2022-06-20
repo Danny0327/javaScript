@@ -1,0 +1,148 @@
+body {
+    width: 100%;
+}
+main {
+    
+}
+.insure {
+    display: flex;
+    justify-content: right;
+    width: 100px;
+    height: 15px;
+}
+.menu{
+    visibility: hidden;
+}
+
+.imagen2 {
+    background-image: url(./images/image-intro-mobile.jpg);
+    top: -430px;
+    
+}
+.container {
+    margin: 400px 0% -400px 0px;
+    width: 580px;
+    height: -420%;
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;   
+}
+.imagen1 {
+        display: none;
+        background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+}     
+
+.linea {
+    display: none;   
+}
+.titulo {
+    font-size: 120%;
+    height: -10px;
+    width: 1px; 
+    margin: 6vh 41%;
+    
+}
+.parrafo {
+    display: flex;
+    justify-content: center;
+    height: 80px; 
+    width: 420px;
+    display:inline-table; 
+    margin: -1vh 18%;
+}   
+.plans { 
+    display: flex;
+    justify-content: center; 
+    margin: 1% 0% 0% 40%;
+}
+.linea2 {
+    height:1px;
+    width: 30%;   
+    margin: 30% 0% -23% 33%;
+}
+
+.imagen3 {
+    display: none;
+    }
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    margin: 30% 0% 6% -13%;
+}
+.iconos {
+    display: flex; 
+    flex-direction: column;
+}
+.semititulo {
+    display: flex;
+    justify-content: center;
+}
+.snappy {
+    color:  hsl(273, 4%, 51%);
+    display: flex;
+    justify-content: center;
+}
+.cuadro {
+    padding: 70px;
+    margin: 150px 120px 150px 120px;
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-position: 100%;
+    background-size: 70%;
+}
+.titulo3 {
+    font-size: 250%;
+
+}
+.work {
+    padding: 5px;
+    margin: 5px 85px 0px 0px;
+}
+footer {
+    display: grid;
+    justify-content: center;
+    color: white;
+    background: rgb(255, 255, 255);
+}
+.fondo {
+    display: none;
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+}
+.insure2 {
+    margin: 0% 0% 0% 10%;
+}
+.logos2 {
+    display: grid;
+    justify-content:center;
+    justify-content: space-around; 
+    background-size: 20%;
+    height: 1.9rem;
+    margin: -35% 0% -1% 2%;
+    
+}
+.logos3 {
+    background-color:hsl(0, 0%, 100%);
+    margin:0 6px
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    justify-content: center;
+    text-transform:uppercase;
+    font-size: 8px;
+    letter-spacing: 0.30em;
+    line-height: 30px;
+}
+.listas {
+    display: flex;
+    justify-content:center;
+    font-weight: 550;
+    word-spacing: 0.25em;
+    letter-spacing: 0.10em;
+    line-height: 30px;
+}
+.linea3 {
+    border-top: 1px solid rgb(196, 191, 191);
+    height: 50px;
+    max-width: 320px;
+    margin: 30% 0% -23% -5%;
+}
