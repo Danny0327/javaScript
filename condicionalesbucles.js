@@ -138,7 +138,8 @@ switch(evaluación){
     default;
     //codigo
 }
-el break; siempre se pone al terminar el caso-lo que hace es evitar que el switch se siga ejecutando hacia abajo, cuando un programa encuentra un break rompe la ejecucion y pasa a la siguiente estructura que tenga que ejecutar.
+el break; siempre se pone al terminar el caso-lo que hace es evitar que el switch se siga ejecutando hacia abajo, 
+cuando un programa encuentra un break rompe la ejecucion y pasa a la siguiente estructura que tenga que ejecutar.
 */
 
 let num = 4 ;
@@ -291,13 +292,13 @@ bucle{
     codigo a ejecutar
 }
 
-WHILE (si la condición no se cumple no se ejecuta)
+WHILE tiene que  cumplir la condición para que ejecute(si la condición no se cumple no se ejecuta)
 indeterminado
 sintaxis: unica parte: condición de salida
 while(condición){
     codigo a ejecutar
 }
-DO WHILE (se ejecuta una vez minimo se cumpla o no la condición)
+DO WHILE se ejecuta luego  ve si cumple la condición(se ejecuta una vez minimo se cumpla o no la condición)
 indeterminado
 sintaxis: dos partes: codigo a ejecutar, condición de salida
 do{
@@ -313,3 +314,223 @@ let pass = 'hola';
 do{
     pass = prompt('introduzca su contraseña')
 }while(pass != 'hola')
+
+/*---------------------------------------------------------------------------------------------------------------
+bucle FOR
+determinado: hay que especificar cuantas vueltas tiene que dar durante su ejecucuión
+su sintaxis se compone de tres partes
+-iniciación de variable
+-numero de vueltas
+-incremento o decremento
+for(let i=0;i<=10;i++){codigo a ejecutar
+}*/
+for(let=i=0;i<=10;i++){
+    console.log(i);
+}
+// ------------------------------
+for(let=i=10;i>=0;i--){
+    if(i!=5){        
+    console.log(i);
+    }
+}
+// ---------------------------------
+let numbers = [0,1,2,3,4,5,]
+for(let=i=0;i<numbers.length;i++){
+    console.log(numbers[i]);
+}
+// ---------------------------------
+let numbers = [0,1,2,3,4,5,]
+for(let=i=0;i<numbers.length;i++){
+/*template string*/ console.log(`i vale ${i} el valor de esa posición en el array es ${numbers[i]}`);
+}
+/*bucle FOR OF
+let names=[´paco´, ´jose´, ´paula´, ´maría´]
+for(let name of names){
+    console.log(name);
+}
+1 vuelta:paco
+2 vuelta: jose
+----
+-----
+devuelve el valor de la posición array
+
+let names=[´paco´, ´jose´, ´paula´, ´maría´]
+for(let name in names){
+    console.log(name);
+}
+1 vuelta : 0
+2 vuelta : 1
+-
+---
+devuelve el numeero de indice
+---------------------------
+let names = [´paco´, ´jose´, ´paula´, ´maría´]
+
+for(let name of names){
+    console.log(name);
+
+for(let index in names){
+    console.log(index);*/
+
+const arr = [1, 2, 3, 4, 5, 6 ]
+const listaPersonas= [
+ 
+    {"nombre":"pepe","apellidos":"perez"},
+     {"nombre":"ana","apellidos":"gomez"},
+     {"nombre":"almudena","apellidos":"blanco"}
+    ];
+
+for (let persona in listaPersonas) {
+    const element = persona;
+    console.log(listaPersonas[persona]);
+    
+}
+/*---------------------------------------------------------------------------------------
+OBJETOS
+Son estructuras de datos que representan propiedades, valores y acciones que puede realizar el objeto 
+tienen propiedades o atributos y comportamientos o acciones representaaados por pares de clave(key) : valor(value)
+const computer{
+    screensize:17,
+    model:´Macbook pro´
+} 
+----------------------
+const table{
+    material: ´wood´,
+    width: 160,
+    height: 110
+}
+para acceder a las propiedades y acciones del objeto se utiliza la nomenclatuea del punto 
+const person={
+    name: 'juan',
+    age: 36,
+    sons: ['ana' 'luis']
+}
+console.log(person.name);
+
+--------------------------------------
+for(const key in person){
+    console.log(key);
+}
+for (const key in person){
+    console.log(person[key]);
+}
+--------------------------------------------------
+ para imprimir los cinco hijos
+const person={
+    name: 'juan',
+    age: 36,
+    sons: ['ana', 'luis', fredy, pepe, zulma]
+}
+for (const son of person .sons){
+    console.log(son);
+}
+-----------------------------------------------------*/
+
+// imprimir todo el objeto en forma de frase
+
+const person={
+    name: 'juan',
+    age: 36,
+    sons: ['ana','luis', 'sofia', 'miguel', 'fidel']
+}
+console.log(`hola ${person.name}. tienes ${person.age} años y tus hijos se llaman ${person.sons.join(',')}`);
+/*-------------------------------------------------------------------------------------------------------------------------
+
+FUNCIONES
+
+Son fragmentos de codigo que escribimos para ejecutar una tarea y no volver a escribir el mismo codigo mas de una vez
+ayuda a modularizar el codigo(ayuda a localizar los errores)
+deben realizar una sola tarea:
+
+const nombreFunción = () => {
+    codigo a ejecutar
+} 
+
+*una funcion puede recibir parametros (lo que va a utilizar la funcion para ejecutarse)
+const nombreFuncion = (parametro 1, parametro 2)=>{
+    codigo a ejecutar
+}
+
+*pueden devolver valores
+const nombreFunción = (parametro 1, parametro 2) => parametro 1+parametro 2 (devuelven el resultado de la suma)*/
+
+/*function saludar(){
+    console.log('hola');
+}
+saludar()*/
+// -----------------------
+// const saludar = () => console.log("Hola");
+// saludar()
+
+/*const saludar = () => console.log("Hola");
+const saludarUsuario = (user) => console.log('Hola ${user}');
+saludarUsuario(ana)*/
+
+// const suma = (num1, num2) => num1+num2
+// console.log(suma(2,3));
+
+// const suma = (num1, num2) => num1+num2
+// let result = suma (3,6)
+// console.log(result);
+
+// const suma = (num1, num2) => {
+//     return num1+num2
+// }
+
+// console.log(suma(2,3));
+// las llaves significa que va un return, significa que se va a utilizar mas de una linea de codigo
+
+
+const suma = (num1, num2) => {
+        if(num1==2 ) {
+            return num1+num2
+        }
+            return num1
+     }
+     console.log(suma(2,3));
+    
+/*----------------------------------------------------------------------------------------------------------------
+PROGRAMACION ORIENTADA A OBJETOS
+-Clase: plantilla que sirve como molde para crear objetos
+crear objeto= INSTANCIAR OBJETO
+se necesita una funcion constructora, asi se le llama, se ejecuta cada vez que se crea un objeto
+
+class persona {
+    constructor(nombre, apellido, edad){
+        this.nombre=nombre              (nombre del objeto, nombre del parametro...etc)
+        this.apellido=apellido
+        this.edad=edad
+    }
+}
+
+funciones de los objetos=METODOS( estan dentro de la estructura objeto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
