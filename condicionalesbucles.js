@@ -479,6 +479,9 @@ saludarUsuario(ana)*/
 
 // console.log(suma(2,3));
 // las llaves significa que va un return, significa que se va a utilizar mas de una linea de codigo
+// parseInt()
+// Resumen
+// Convierte (parsea) un argumento de tipo cadena y devuelve un entero de la base especificada.
 
 
 const suma = (num1, num2) => {
