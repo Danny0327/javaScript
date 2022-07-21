@@ -97,3 +97,82 @@ for(let i = num; i>0; i--){
 }
 
 console.log(`el factorial de ${num} es ${result}`);*/
+// -----------------------------------------------------------------------------------------------------------------------
+
+// 6. Escriba un programa que permita ir introduciendo una serie indeterminada de numeros mientras su suma no supere 50.
+// Cuando esto ocurra se debe mostrar el total acumulado y el contador de cuantos numeros se han introducido
+
+/*let suma=0
+let cont=0
+
+while(suma<50){
+    suma += parseInt(prompt('digite un número para sumar'))
+    cont++
+}
+    console.log(`total acumulado: ${suma}`);
+    console.log(`se introducieron ${cont} números`);*/
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+// 7. Crea 3 arrays. El primero tendra 5 numeros, el segundo se llamara pares y el tercero impares, ambos estaran vacios.
+// Después multiplica cada uno de los numeros del primer array por un numero aleatorio entre 1 y 10, 
+// si el resultado es par guarda ese numero en el array de pares y si es impar en el array de impares. Muestra por coonsola:
+// -la multiplicación que se produce junto con su resultado con el formato 2*3=6
+// - el array de pares e impares 
+
+/*const numbers = [3, 47, 7, 10, 26]
+let pares =[]
+let impares =[]
+
+for(const number of numbers){
+    let random = Math.round(Math.random() * 10 + 1)
+    const result = number * random
+
+    console.log(`${number} * ${random} = ${result}`);
+    if(result % 2 == 0){
+        pares.push(result)
+    }else{
+        impares.push(result)
+    }
+}
+console.log(pares);
+console.log(impares);*/
+
+// ---------------------------------------------------------------------------------------------------
+
+// 8. Dado un array de letras, solicita un numero de DNI y calcula que letra le corresponde. El numero no puede ser negativo ni tener mas de 8 digitos.
+// La posición de la letra es el resultado del modulo del numero introducido entre 23. 
+
+// const letras = ['T','R','W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']
+
+/*const letras = ['T','R','W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']
+
+const dni = prompt('digita tu DNI')
+
+if(dni.length==8 && parseInt(dni)>0){
+    console.log(`tu DNI completo es ${dni}${letras[dni%23]}`);
+}*/
+
+// 9. Solicitar al usuario una palabra y mostrar en consola el numero de consonantes, vocales y  longitud de la palabra.
+
+/*const palabra = prompt('ingrese palabra')
+
+let consonantes = 0;
+let vocales = 0;
+for (const letra of palabra){
+    if(letra == 'a' || letra=='e' || letra=='i' || letra=='o' ||letra=='u') vocales++
+    else consonantes++
+}
+console.log(`Tu palabra tiene ${vocales} vocales, ${consonantes} consonantes y tiene un total de ${palabra.length} letras.`);*/
+
+// 10. Dado un array que contiene ["azul", "ammarillo", "rojo", "verde", "rosa"] determinar si un color introducido por el usuario
+// a través de un prompt se encuentra dentro del array o no.
+
+const colors= ["azul", "ammarillo", "rojo", "verde", "rosa"]
+const color = prompt ('escribe un color')
+
+if (colors.indexOf(color) !== -1){
+    console.log('este color se encuentra en el array');
+}else{
+    console.log('este color no está en el array');
+}
