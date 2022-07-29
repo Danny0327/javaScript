@@ -128,7 +128,8 @@ for(const number of numbers){
     let random = Math.round(Math.random() * 10 + 1)
     const result = number * random
 
-    console.log(`${number} * ${random} = ${result}`);
+    console.log(`$
+    {number} * ${random} = ${result}`);
     if(result % 2 == 0){
         pares.push(result)
     }else{
@@ -168,11 +169,67 @@ console.log(`Tu palabra tiene ${vocales} vocales, ${consonantes} consonantes y t
 // 10. Dado un array que contiene ["azul", "ammarillo", "rojo", "verde", "rosa"] determinar si un color introducido por el usuario
 // a través de un prompt se encuentra dentro del array o no.
 
-const colors= ["azul", "ammarillo", "rojo", "verde", "rosa"]
-const color = prompt ('escribe un color')
+/*const colors= ["azul", "ammarillo", "rojo", "verde", "rosa"]
+const color = prompt ('escribe un color').toLocaleLowerCase()
 
 if (colors.indexOf(color) !== -1){
     console.log('este color se encuentra en el array');
 }else{
     console.log('este color no está en el array');
+}*/
+
+
+// -------------------------------------------------------------------------------------------------------------------------------
+// Crea una clase libro
+// la clase tendra titulo, autor, año y genero.
+// crea un metodo que devuelva toda la información del libro
+// pide 3 libros y guardalos en un array
+// los libros se introduciran al arrancar el programa pidiendo los datos con prompt
+// validar que los campos no se introduzcan vacios
+// validar que el año sea un numero y que tenga 4 digitos
+// validar que el genero sea: aventuras, terror o fantasia
+// crea una función que muestre todos los libros
+// crea una funcion que muestre los autores ordenados alfabeticamente
+// crea una funcion que pida un genero y muestre la información de los libros que pertenecen a ese género 
+// usando el método que devuelve la información
+
+class libro{
+    constructor(titulo, autor, año, genero){
+        this.título = titulo             
+        this.autor = autor
+        this.año = año
+        this.genero = genero
+    }
+        libroInfo(){
+            return `${this.titulo} es un libro de ${this.genero} escrito por ${this.autor} en ${this.año}` 
+        }
 }
+        // let plateroYyo = new libro('PLATERO Y YO','No me acuerdo',2070,'fantasia')
+        let libros = []
+
+        while (libros.lenght < 3){
+            let titulo = prompt ('escribe el título del libro')
+            let autor = prompt ('escribe el autor del libro')
+            let año = prompt ('escrribe el año del libro')
+            let genero = prompt ('escribe el género del libro') 
+            .toLowerCase()
+        
+            if (title != '' && 
+                autor != '' && 
+                !isNaN(año) && 
+                año.length == 4 &&
+                (genero == 'aventura' || genero == 'terror' || genero == 'fantasía')){
+
+                libros.push(new libro(titulo, autor, año, genero))
+
+            }
+        }
+
+        const todosloslibros = () =>{
+            console.log(libros);
+        }
+
+        const todosloslibros = ()
+        todosloslibros()
+   
+

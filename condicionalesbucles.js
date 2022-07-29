@@ -508,8 +508,33 @@ class persona {
 
 funciones de los objetos=METODOS( estan dentro de la estructura objeto)
 
+para crear una clase se hace con la palabra reservada NEW y el  nombre de la clase
+ej:
+const juan = new persona ('Danny', 'Campos', 23)
+se puede acceder a las propiedades ymetodos utilizando el .y la propiedad
+Daany.edad
+Danny.saludar
+o tambien de esta forma:
+Danny ['nombre'] 
 
+class persona{
+    constructor(nombre, apellido, edad){
+        this.nombre = nombre              
+        this.apellido = apellido
+        this.edad = edad
 
+        this.datos = `me llamo ${nombre} ${apellido} y tengo ${edad} años.`
+    }
+
+    saludar(){
+        return `Hola, me llamo ${this.nombre} y tengo ${this.edad} años.`
+    }
+}
+const ana = new persona('ana', 'figueroa', 25)
+const pepe = new persona('pepe', 'gutierrez', 35)
+
+console.log(pepe);
+console.log(juan.saluda());
 
 
 
